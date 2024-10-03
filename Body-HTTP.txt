@@ -1,0 +1,5 @@
+-Uso Del metodo GET per instaurare la connessione e richiedere un file al server richiedendo connessione persistente
+-Host
+-User-Agent: descrive il browser utilizzato:"Mozilla", la versione:"5.0" e su che sistema operativo sta girando, in questo caso su windows 10 versione a 64 bit e tutti i browser con cui ha vìcompatibilità
+-Accept: accetta questi tipi di file MIME: TXT/HTML( per gli embed nelle email). documenti fatti con XHTML+XML e documenti puro XML questo tipo di media type viene diviso dalle estensioni accettate dal parametro q=0.9
+-Accept-Language: accetta la lingua che è decisa dal parametro posto a fine riga, in questo caso Inglese-Americano
