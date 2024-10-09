@@ -1,0 +1,39 @@
+Es.1
+-Il metodo HTTP utilizzato è il metodo GET
+-Il server ha restituito status code 200 OK e vuol dire che la richiesta mandata dal client è stata svolta con successo
+-Response Headers: Alt-Svc
+		   Content-Encoding
+		   Content-Security-Policy
+		   Content-Type
+		   Date
+		   Etag
+  		   Expires
+		   Last-modified
+		   Server
+		   X-Serial
+-Request Header:   :authority:
+		   :method:
+		   :path:
+		   :scheme:-query
+		   accept
+	 	   accept-encoding
+		   accept-language
+		   cookie
+		   priority
+		   Referer
+		   sec-ch-ua
+		   sec-ch-ua-mobile
+		   sec-ch-ua-platform
+		   sec-fetch-dest
+		   sec-fetch-mode
+		   sec-fetch-site
+		   User-Agent
+-Il Browser ha richiesto altre risorse: CSS-JS-Immagini(.AVIF/.WEBP/.APNG)
+-cambiano alcuni parametri presenti negli headers
+-get richiede delle cose al server mentre post è l'utente a mandare dei dati al server che possono essere un form o i dati di accesso.
+
+
+
+Es.2
+-le due risposte possibili sono 200 OK ed error404
+-IL server proxy si interfaccia tra client e server e lavora come intermediario tra essi, proteggendo il client da possibili intrusioni nella connessione tra esso ed il server
