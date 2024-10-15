@@ -37,3 +37,40 @@ Es.1
 Es.2
 -le due risposte possibili sono 200 OK ed error404
 -IL server proxy si interfaccia tra client e server e lavora come intermediario tra essi, proteggendo il client da possibili intrusioni nella connessione tra esso ed il server
+ Facendo ciò il sevrer semplicemente richiede al proxy la ricerca in cache di una richiesta prefatta se avviene Cache Hit allora saraà direttamente il proxy a mandare ed interfacciarsi con il server originale.
+
+
+
+
+
+Es.3
+Dati:
+	➢ Numero di oggetti: 11 (1 file HTML + 10 oggetti)
+	➢ Dimensione di ogni oggetto: L = 200 kbit
+	➢ Capacità del collegamento: C = 100 kbit/s
+	➢ Ritardo di propagazione τ = 100 ms
+
+	r = C/N = 100 kbit/s / 11 N = 9,09 kbit/s
+	t = L/r = 200 kbit / 9,09 kbit/s = 22 s
+
+	t_oggetto = 200 kbit / 100 kbit/s = 2 s
+	t_totale = t_oggetto*N+τ*N = (2 s * 11 N) + (0,1 s * 11) = 22 s + 1,1 s = 23,1 s
+	
+Es.4
+	
+	Dati:
+	➢ Numero di oggetti: 12 (1 file HTML + 11 oggetti)
+	➢ Dimensione di ogni oggetto: L = 50 kB
+	➢ Capacità del collegamento: C = 1 Mbit/s
+	➢ RTT: 150 ms = 0.15 secondi
+	➢ Numero di flussi interferenti: 9
+	➢ Numero totale di flussi: n = 9 flussi interferenti + 1 flusso del client = 10
+
+	T_Hit= 0,0008 s
+	T_Miss= 0,008 s
+	
+
+
+
+	
+
