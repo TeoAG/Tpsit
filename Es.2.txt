@@ -1,0 +1,7 @@
+tramite il txt sappiamo i tempi di interazione del metodo GET
+
+tempo_risoluzione_dns: 0.052278 (tempo necesario per trovare il server http dai vari passaggi dei server dns)
+tempo_connessione: 0.069850 (tempo per accedere al server)
+tempo_pretrasferimento: 0.399383 (tempo per cui il server carica il buffer)
+tempo_inizio_trasferimento: 0.508459 (tempo necessario a iniziare lo scambio dei dati)
+tempo_totale: 0.509239 (tempo totale di trasferimento)
