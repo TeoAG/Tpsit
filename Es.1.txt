@@ -66,8 +66,7 @@ Es.4
 	➢ Numero di flussi interferenti: 9
 	➢ Numero totale di flussi: n = 9 flussi interferenti + 1 flusso del client = 10
 
-	T_Hit= 0,0008 s
-	T_Miss= 0,008 s
+	
 	
 
 
