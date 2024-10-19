@@ -66,6 +66,25 @@ Es.4
 	➢ Numero di flussi interferenti: 9
 	➢ Numero totale di flussi: n = 9 flussi interferenti + 1 flusso del client = 10
 
+r = C/N = 1000 kbit/s / 10 N = 100 kbit/s
+	t = L/r = 400 kbit / 100 kbit/s = 4 s
+	t_totale = t_oggetto*N+RTT = 4 * 12 + 0,15 = 48 + 0,15 = 48,15 s
+
+	r = C/N = 1000 kbit/s / 20 N = 50 kbit/s
+	t = L/r = 400 kbit / 50 kbit/s = 8 s
+	t_totale = t_oggetto+RTT = 8 s + 0,15 s = 8,15 s
+	
+Es.5
+
+	➢ Cache hit rate: P = 0.4
+	➢ Cache miss rate: Q = 0.6
+	➢ Dimensione pagina web: L = 100 kB = 0,8 Mb
+	➢ Capacità del collegamento client-proxy: C = 1 Gb/s = 1000 Mb
+	➢ Capacità del collegamento proxy-server: c = 100 Mb/s
+
+	T_hit = L/C = 0,8 Mb / 1000 Mb/s = 0,0008 s
+	T_miss = L/c = 0,8 Mb / 100 Mb/s = 0,008 s
+	T_medio = P*T_hit+Q*T_miss = 0,4 * 0,0008 + 0,6 * 0,008 = 0,00032 + 0,0048 = 0,00512 s = 5,12 ms
 	
 	
 
