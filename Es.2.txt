@@ -5,3 +5,31 @@ tempo_connessione: 0.069850 (tempo per accedere al server)
 tempo_pretrasferimento: 0.399383 (tempo per cui il server carica il buffer)
 tempo_inizio_trasferimento: 0.508459 (tempo necessario a iniziare lo scambio dei dati)
 tempo_totale: 0.509239 (tempo totale di trasferimento)
+
+-2
+  il messaggio di ritorno ci dà l'header della risposta e l'errore 404 not found che è l'errore che avviene quando una         
+  determinato file non è presente all'interno del server.
+-4 
+  dalla risposta del server vediamo questo messaggio 
+data la risposta del server possiamo ipotizzare che, pur non avendo lo status evidenziato nel messaggio, sia 200 OK 
+ 
+ {  
+  "args": {},
+  "data": "{    \"usarname\": \"studente\",    \"password\": \"password123\"}",
+  "files": {},
+  "form": {},
+  "headers": {       //da qua inizia l'header della risposta
+    "Accept": "*/*",      //sappiamo che accetta tutti i tipi di file
+    "Content-Length": "58",
+    "Content-Type": "application/json",     //che la risposta contiene un Json 
+    "Host": "httpbin.org",                  //che il Nome logico, ovvero l'host che ha risposto, è "httpbin.org"
+    "User-Agent": "curl/8.7.1",             /che il metodo per interfacciarci con il server è Curl
+    "X-Amzn-Trace-Id": "Root=1-67135cc8-3f64c35e7d4878d854dd4a5f"
+  },
+  "json": {       //questo è il contenuto del file Json mandato al server per il login
+    "password": "password123",
+    "usarname": "studente"
+  },
+  "origin": "94.80.173.222",
+  "url": "https://httpbin.org/post"
+}
